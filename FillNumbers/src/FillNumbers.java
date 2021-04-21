@@ -1,10 +1,9 @@
 import java.util.*;
-import java.lang.*;
 
 class Test
 {  
     public static int maxValue=0;
-    public static int[] returnNumbers(int a[]){
+    public static int[] returnNumbers(int[] a){
        if (a.length<0){
         System.out.println("El array esta sin valores!");
         }
@@ -12,29 +11,27 @@ class Test
         int[]array = new int[maxValue];
        
         for(int i=0; i<maxValue; i++){
-         array[i]=i+1;
-         
-         }
-        
-        
+         array[i]=i+1;  
+         }    
      return array;
     }
     
     private static int findMaxNumber(int[]a ){
       if (a.length>0){
         maxValue=a[0];
-        for(int i=0; i<a.length; i++) {
-            if(a[i]> maxValue ){
-            maxValue=a[i];
-            }
-        } }else{
+          for (int j : a) {
+              if (j > maxValue) {
+                  maxValue = j;
+              }
+          }
+      }else{
         System.out.println("El array esta sin valores");
         }  
     return maxValue;
        }
     
     
-    public static void main(String args[])
+    public static void main(String[] args)
     {
       int []a={58,60,65};
         if(a.length>0){
