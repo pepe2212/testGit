@@ -63,7 +63,7 @@ class Test
     
     public static void main(String[] args)
     {
-    	/*This is the main void where the code can be tested*/
+    	/*This is the main void where the input can be tested*/
         String text="123 abcd*3";
         String sample=returnNextPlace(text);  
         System.out.println(sample);

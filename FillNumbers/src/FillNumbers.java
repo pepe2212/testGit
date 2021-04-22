@@ -48,10 +48,8 @@ class Test
       if(a.length>0){
            System.out.println(Arrays.toString(returnNumbers(a)));
         }else {
-        	System.out.println("El array esta sin valores!");
+           System.out.println("El array esta sin valores!");
         }
     
-    }
-}
     }
 }
